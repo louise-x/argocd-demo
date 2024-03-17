@@ -4,6 +4,6 @@ on:
 
 jobs:
   build: 
-    runs-on: arc-runner-org # label of org runner
+    runs-on: arc-runner-repo # label of repo runner
     steps: 
       - run: echo "Hello build!"
