@@ -1,9 +1,0 @@
-name: Test k3s GH runner
-on:
-  pull_request:
-
-jobs:
-  build: 
-    runs-on: arc-runner-org # label of org runner
-    steps: 
-      - run: echo "Hello build!"
