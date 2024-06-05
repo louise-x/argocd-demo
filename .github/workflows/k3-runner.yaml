@@ -1,7 +1,7 @@
 name: Test k3s GH runner
 on:
   push:
-    branches: [main]
+    branches: [main-disable]
 
 jobs:
   build: 
