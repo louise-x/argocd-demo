@@ -9,9 +9,9 @@ jobs:
     # env:
     #   PACKAGES_TO_UPGRADE: ${{ needs.run_publish.outputs.packages }}
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        repo: ['louise-x/learn-git']
+    # strategy:
+    #   matrix:
+    #     repo: ['louise-x/learn-git']
     timeout-minutes: 5
     steps:
       - name: Dispatch to workflows
@@ -19,4 +19,4 @@ jobs:
             curl -H "Accept: application/vnd.github.everest-preview+json" \
             -H "Authorization: token ${{ secrets.DISPATCH_TOKEN }}" \
             --request POST \
-            --data '{"event_type": "some_event", "client_payload": { "foo": "${{ github.sha }}" }}' https://api.github.com/repos/${{ matrix.repo }}/dispatches
+            --data '{"event_type": "some_event_01", "client_payload": { "foo": "${{ github.sha }}" }}' https://api.github.com/repos/louise-x/learn-git/dispatches
