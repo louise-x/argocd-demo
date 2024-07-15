@@ -19,4 +19,4 @@ jobs:
             curl -H "Accept: application/vnd.github.everest-preview+json" \
             -H "Authorization: token ${{ secrets.DISPATCH_TOKEN }}" \
             --request POST \
-            --data '{"event_type": "some_event_01", "client_payload": { "foo": "${{ github.sha }}" }}' https://api.github.com/repos/louise-x/learn-git/dispatches
+            --data '{"event_type": "some_event_02", "client_payload": { "foo": "${{ github.sha }}" }}' https://api.github.com/repos/louise-x/learn-git/dispatches
