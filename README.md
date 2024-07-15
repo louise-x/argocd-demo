@@ -8,4 +8,3 @@ Argo CD is a Kubernetes-native continuous deployment (CD) tool. Unlike external 
 
 For a detailed overview visit:
 https://medium.com/stackademic/a-complete-overview-of-argocd-with-a-practical-example-0cf7edb00cb1
-.
